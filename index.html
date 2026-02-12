@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Mohini</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<!-- Floating Hearts Container -->
+<div class="hearts"></div>
+
+<!-- Background Music -->
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<div class="app">
+
+    <!-- ================= START SCREEN ================= -->
+    <div id="startScreen" class="card">
+        <h1>Hello Mohini 🎉</h1>
+
+        <p>
+            Yeh website specially banayi hai tere liye…<br>
+            by teri coder dost <b>Shravani</b> 😎❤️
+        </p>
+
+        <p>
+            Birthday surprise chahiye?<br>
+            Toh pehle Rapid Fire pass karna padega!
+        </p>
+
+        <p>
+            Dekhte hain tu kitne jaanti hai 😏
+        </p>
+
+        <button onclick="startGame()">Chal Start Kar 🔥</button>
+    </div>
+
+
+    <!-- ================= QUIZ SCREEN ================= -->
+    <div id="quizScreen" class="card hidden">
+        <h2 id="question">Question here</h2>
+        <div id="options"></div>
+
+        <div class="timerBox">
+            Time Left: <span id="timer">5</span>s
+        </div>
+    </div>
+
+
+    <!-- ================= FUNNY SCREEN ================= -->
+    <div id="funnyScreen" class="card hidden">
+        <h2>Arre Mondi! 😜</h2>
+
+        <p><b>Surprise chahiye toh sab correct kar!</b></p>
+        <p>Tab tak yeh video dekh aur memory refresh kar 😂</p>
+
+        <video id="funnyVideo" autoplay loop>
+            <source src="funny.mp4" type="video/mp4">
+        </video>
+
+        <button onclick="restartGame()">Phir se try kar</button>
+    </div>
+
+
+    <!-- ================= SURPRISE SCREEN ================= -->
+    <div id="surpriseScreen" class="card hidden">
+
+        <h1>Happy Birthday Mondi 🎂</h1>
+
+        <!-- Typing Message -->
+        <p id="birthdayMessage"></p>
+
+        <p class="signature">– Teri coder dost, Shravani</p>
+
+        <h2 class="memoryHeading">Memories of us together 📸</h2>
+
+        <div class="slideshow">
+            <img id="slide" src="images/photo1.jpg" alt="Memories">
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
