@@ -179,19 +179,19 @@ function restartGame() {
 // ================= SLIDESHOW =================
 
 let images = [
-    "images/photo1.jpg",
+    "images/photo1.JPG",
     "images/photo2.jpg",
-    "images/photo3.jpg",
+    "images/photo3.JPG",
     "images/photo4.jpg",
     "images/photo5.jpg",
     "images/photo6.jpg",
-    "images/photo7.jpg",
-    "images/photo8.jpg",
+    "images/photo7.JPG",
+    "images/photo8.JPG",
     "images/photo9.jpg",
     "images/photo10.jpg",
     "images/photo11.jpg",
-    "images/photo12.jpg",
     "images/photo13.jpg",
+    "images/photo14.jpg"
 ];
 
 let index = 0;
